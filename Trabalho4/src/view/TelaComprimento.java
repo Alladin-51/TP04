@@ -3,6 +3,7 @@ import converter.Comprimento;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Font;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -71,6 +72,7 @@ public class TelaComprimento extends JFrame {
 				JFrame frame = new JFrame("Comprimento");
 				frame.setSize(150, 150);
 				JLabel labelT = new JLabel(comprimento.getComp(comboComp2.getSelectedIndex()));
+				labelT.setFont( new Font("Arial", Font.PLAIN, 20));
 				labelT.setBounds(100, 70, 150, 150);
 				frame.getContentPane().add(labelT);
 				frame.setVisible(true);
