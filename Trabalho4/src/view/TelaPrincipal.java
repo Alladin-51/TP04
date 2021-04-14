@@ -64,7 +64,7 @@ public class TelaPrincipal extends JFrame {
 			//		new TelaTempo();
 					break;
 				case 6:
-		//			new TelaVelocidade();
+				new TelaVelocidade();
 					break;
 				case 7:
 			//		new TelaDados();
