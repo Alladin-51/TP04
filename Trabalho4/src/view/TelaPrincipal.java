@@ -52,7 +52,7 @@ public class TelaPrincipal extends JFrame {
 				
 					break;
 				case 2:
-			//		new TelaPeso();
+					new TelaPeso();
 					break;
 				case 3:
 			//		new telaVolume();
