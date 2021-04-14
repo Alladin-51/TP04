@@ -49,7 +49,6 @@ public class TelaPrincipal extends JFrame {
 					break;
 				case 1:
 					new TelaArea();
-				
 					break;
 				case 2:
 					new TelaPeso();
@@ -67,7 +66,7 @@ public class TelaPrincipal extends JFrame {
 				new TelaVelocidade();
 					break;
 				case 7:
-			//		new TelaDados();
+					new TelaDados();
 					break;
 				}	
 			}
