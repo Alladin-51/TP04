@@ -48,7 +48,7 @@ public class TelaPrincipal extends JFrame {
 					new TelaComprimento();
 					break;
 				case 1:
-				//	new TelaArea();
+					new TelaArea();
 				
 					break;
 				case 2:
