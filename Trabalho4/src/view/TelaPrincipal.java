@@ -45,7 +45,7 @@ public class TelaPrincipal extends JFrame {
 				switch(comboPrincipal.getSelectedIndex())
 				{
 				case 0: 
-				//	new TelaComprimento();
+					new TelaComprimento();
 					break;
 				case 1:
 				//	new TelaArea();
