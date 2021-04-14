@@ -58,7 +58,7 @@ public class TelaPrincipal extends JFrame {
 					new TelaVolume();
 					break;
 				case 4:
-			//		new TelaTemperatura();
+					new TelaTemperatura();
 					break;
 				case 5:
 			//		new TelaTempo();
