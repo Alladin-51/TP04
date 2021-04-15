@@ -19,6 +19,7 @@ public class Comprimento {
 		{
 	// Caso o usuário escolha milímetro
 		case 0:
+			this.milimetro = valor;
 			this.centimetro = valor / 10;
 			this.decimetro = valor / 100;                   // Em cada caso é calculado todos os 
 			this.metro = valor / 1000;                      //         valores possíveis
@@ -30,6 +31,7 @@ public class Comprimento {
 			
 	// Caso o usuário escolha centímetro
 		case 1:
+			this.centimetro = valor;
 			this.milimetro = valor * 10;
 			this.decimetro = valor / 10;
 			this.metro = valor / 100;
@@ -41,6 +43,7 @@ public class Comprimento {
 			
 	// Caso o usuário escolha decímetro
 		case 2:
+			this.decimetro = valor;
 			this.milimetro = valor * 100;
 			this.centimetro = valor * 10;
 			this.metro = valor / 100;
@@ -52,6 +55,7 @@ public class Comprimento {
 			
 	// Caso o usuário escolha metro
 		case 3:
+			this.metro = valor;
 			this.milimetro = valor * 1000;
 			this.centimetro = valor * 100;
 			this.decimetro = valor * 10;
@@ -63,6 +67,7 @@ public class Comprimento {
 			
 	// Caso o usuário escolha quilômetro
 		case 4:
+			this.kilometro = valor;
 			this.milimetro = valor * 1000000;
 			this.centimetro = valor * 100000;
 			this.decimetro = valor * 10000;
@@ -74,6 +79,7 @@ public class Comprimento {
 			
 	// Caso o usuário escolha milha
 		case 5:
+			this.milha = valor;
 			this.milimetro = valor * 1690340;
 			this.centimetro = valor * 169034;
 			this.decimetro = valor * 16903.4;
@@ -85,6 +91,7 @@ public class Comprimento {
 			
 	// Caso o usuário escolha pés
 		case 6:
+			this.pes = valor;
 			this.milimetro = valor * 304.8;
 			this.centimetro = valor * 30.48;
 			this.decimetro = valor * 3.048;
