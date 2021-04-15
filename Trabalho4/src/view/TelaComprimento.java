@@ -88,10 +88,11 @@ public class TelaComprimento extends JFrame {
 			
 				// Exibição do resultado
 				
+				
 				 lblTextoComp4.setVisible(true);
 				 fieldResultado.setVisible(true);
 			     fieldResultado.setText(comprimento.getComp(comboComp2.getSelectedIndex()));	
-				
+				 
 				
 			}
 		});
