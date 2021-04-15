@@ -20,15 +20,17 @@ public class TelaComprimento extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField fieldComp;
+	private JTextField fieldResultado;
 
 	
 	public TelaComprimento() {
+		setTitle("Comprimento");
 		
-		// Aqui é feito a instanciação da classe comprimento
+		// Aqui é feito a instanciação da classe comprimento 
 		Comprimento comprimento = new Comprimento();
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 400, 253);
+		setBounds(200, 100, 400, 350);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -44,7 +46,7 @@ public class TelaComprimento extends JFrame {
 		fieldComp.setColumns(10);
 		
 		JLabel lblTextoComp2 = new JLabel("Selecione a unidade de medida do n\u00FAmero digitado acima");
-		lblTextoComp2.setBounds(53, 65, 331, 14);
+		lblTextoComp2.setBounds(29, 67, 331, 14);
 		contentPane.add(lblTextoComp2);
 		
 		JComboBox comboComp1 = new JComboBox();
@@ -53,7 +55,7 @@ public class TelaComprimento extends JFrame {
 		contentPane.add(comboComp1);
 		
 		JLabel lblTextoComp3 = new JLabel("Selecione a unidade para qual deseja converter");
-		lblTextoComp3.setBounds(79, 123, 295, 14);
+		lblTextoComp3.setBounds(51, 123, 295, 14);
 		contentPane.add(lblTextoComp3);
 		
 		JComboBox comboComp2 = new JComboBox();
@@ -61,10 +63,23 @@ public class TelaComprimento extends JFrame {
 		comboComp2.setBounds(122, 150, 130, 22);
 		contentPane.add(comboComp2);
 		
-		JButton btnBotaoComp = new JButton("OK");
+		fieldResultado = new JTextField();
+		fieldResultado.setBounds(142, 280, 86, 20);
+		contentPane.add(fieldResultado);
+		fieldResultado.setColumns(10);
+		fieldResultado.setVisible(false);
+		
+		JLabel lblTextoComp4 = new JLabel("Resultado");
+		lblTextoComp4.setFont(new Font("Arial", Font.PLAIN, 16));
+		lblTextoComp4.setBounds(149, 255, 79, 14);
+		contentPane.add(lblTextoComp4);
+		lblTextoComp4.setVisible(false);
+		
+		
+		JButton btnBotaoComp = new JButton("Converter");
 		btnBotaoComp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				//setVisible(false);
 				
 				double valor = Double.parseDouble(fieldComp.getText().toString());
 				
@@ -72,26 +87,35 @@ public class TelaComprimento extends JFrame {
 				comprimento.converteComp(valor, comboComp1.getSelectedIndex());
 			
 				// Exibição do resultado
-				JFrame frame = new JFrame("Comprimento");
-				frame.setSize(150, 150);
-				JLabel labelT = new JLabel(comprimento.getComp(comboComp2.getSelectedIndex()));
-				labelT.setFont( new Font("Arial", Font.PLAIN, 20));
-				labelT.setBounds(100, 70, 150, 150);
-				frame.getContentPane().add(labelT);
-				frame.setVisible(true);
-				setLocationRelativeTo(null);
-				setVisible(true);
 				
+				 lblTextoComp4.setVisible(true);
+				 fieldResultado.setVisible(true);
+			     fieldResultado.setText(comprimento.getComp(comboComp2.getSelectedIndex()));	
 				
 				
 			}
 		});
-		btnBotaoComp.setBounds(139, 183, 89, 23);
+		btnBotaoComp.setBounds(132, 193, 113, 23);
 		contentPane.add(btnBotaoComp);
+		
+		JButton btnBotaoVoltarComp = new JButton("Voltar");
+		btnBotaoVoltarComp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			new	TelaPrincipal().setVisible(true);
+				setVisible(false);
+				
+			}
+		});
+		btnBotaoVoltarComp.setBounds(10, 279, 89, 23);
+		contentPane.add(btnBotaoVoltarComp);
+		
+		
+		
+		
 		
 		setLocationRelativeTo(null);
 		setVisible(true);
 		
 	}
-
 }
