@@ -24,6 +24,7 @@ public class TelaComprimento extends JFrame {
 	
 	public TelaComprimento() {
 		
+		// Aqui é feito a instanciação da classe comprimento
 		Comprimento comprimento = new Comprimento();
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -63,7 +64,9 @@ public class TelaComprimento extends JFrame {
 		JButton btnBotaoComp = new JButton("OK");
 		btnBotaoComp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-	double valor = Double.parseDouble(fieldComp.getText().toString());
+				
+				
+				double valor = Double.parseDouble(fieldComp.getText().toString());
 				
 				// Aqui é feita a converção
 				comprimento.converteComp(valor, comboComp1.getSelectedIndex());
