@@ -57,14 +57,14 @@ public class TelaArea extends JFrame {
 		getContentPane().add(comboArea2);
 		
 		fieldResultadoArea = new JTextField();
-		fieldResultadoArea.setBounds(142, 280, 86, 20);
+		fieldResultadoArea.setBounds(116, 280, 146, 20);
 		getContentPane().add(fieldResultadoArea);
 		fieldResultadoArea.setColumns(10);
 		fieldResultadoArea.setVisible(false);
 		
 		JLabel lblTextoArea4 = new JLabel("Resultado");
 		lblTextoArea4.setFont(new Font("Arial", Font.PLAIN, 16));
-		lblTextoArea4.setBounds(149, 255, 79, 14);
+		lblTextoArea4.setBounds(151, 255, 79, 14);
 		getContentPane().add(lblTextoArea4);
 		lblTextoArea4.setVisible(false);
 		
@@ -96,7 +96,7 @@ public class TelaArea extends JFrame {
 				new TelaPrincipal().setVisible(true);
 			}
 		});
-		btnBotaoVoltarArea.setBounds(10, 279, 89, 23);
+		btnBotaoVoltarArea.setBounds(10, 279, 70, 23);
 		getContentPane().add(btnBotaoVoltarArea);
 		
 		

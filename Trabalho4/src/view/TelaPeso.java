@@ -59,14 +59,14 @@ public class TelaPeso extends JFrame {
 		getContentPane().add(comboPeso2);
 		
 		fieldResultadoPeso = new JTextField();
-		fieldResultadoPeso.setBounds(142, 280, 86, 20);
+		fieldResultadoPeso.setBounds(117, 280, 146, 20);
 		getContentPane().add(fieldResultadoPeso);
 		fieldResultadoPeso.setColumns(10);
 		fieldResultadoPeso.setVisible(false);
 		
 		JLabel lblTextoPeso4 = new JLabel("Resultado");
 		lblTextoPeso4.setFont(new Font("Arial", Font.PLAIN, 16));
-		lblTextoPeso4.setBounds(149, 255, 79, 14);
+		lblTextoPeso4.setBounds(151, 255, 79, 14);
 		getContentPane().add(lblTextoPeso4);
 		lblTextoPeso4.setVisible(false);
 		
@@ -99,7 +99,7 @@ public class TelaPeso extends JFrame {
 				new TelaPrincipal().setVisible(true);
 			}
 		});
-		btnBotaoVoltarPeso.setBounds(10, 279, 89, 23);
+		btnBotaoVoltarPeso.setBounds(10, 279, 70, 23);
 		getContentPane().add(btnBotaoVoltarPeso);
 		
 		

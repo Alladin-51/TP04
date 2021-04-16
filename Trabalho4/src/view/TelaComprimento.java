@@ -20,7 +20,7 @@ public class TelaComprimento extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField fieldComp;
-	private JTextField fieldResultado;
+	private JTextField fieldResultadoComp;
 
 	
 	public TelaComprimento() {
@@ -63,15 +63,15 @@ public class TelaComprimento extends JFrame {
 		comboComp2.setBounds(122, 150, 130, 22);
 		contentPane.add(comboComp2);
 		
-		fieldResultado = new JTextField();
-		fieldResultado.setBounds(142, 280, 86, 20);
-		contentPane.add(fieldResultado);
-		fieldResultado.setColumns(10);
-		fieldResultado.setVisible(false);
+		fieldResultadoComp = new JTextField();
+		fieldResultadoComp.setBounds(117, 280, 146, 20);
+		contentPane.add(fieldResultadoComp);
+		fieldResultadoComp.setColumns(10);
+		fieldResultadoComp.setVisible(false);
 		
 		JLabel lblTextoComp4 = new JLabel("Resultado");
 		lblTextoComp4.setFont(new Font("Arial", Font.PLAIN, 16));
-		lblTextoComp4.setBounds(149, 255, 79, 14);
+		lblTextoComp4.setBounds(151, 255, 79, 14);
 		contentPane.add(lblTextoComp4);
 		lblTextoComp4.setVisible(false);
 		
@@ -88,10 +88,9 @@ public class TelaComprimento extends JFrame {
 			
 				// Exibição do resultado
 				
-				
 				 lblTextoComp4.setVisible(true);
-				 fieldResultado.setVisible(true);
-			     fieldResultado.setText(comprimento.getComp(comboComp2.getSelectedIndex()));	
+				 fieldResultadoComp.setVisible(true);
+			     fieldResultadoComp.setText(comprimento.getComp(comboComp2.getSelectedIndex()));	
 				 
 				
 			}
@@ -108,7 +107,7 @@ public class TelaComprimento extends JFrame {
 				
 			}
 		});
-		btnBotaoVoltarComp.setBounds(10, 279, 89, 23);
+		btnBotaoVoltarComp.setBounds(10, 279, 70, 23);
 		contentPane.add(btnBotaoVoltarComp);
 		
 		

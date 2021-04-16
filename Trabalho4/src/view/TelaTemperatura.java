@@ -57,14 +57,14 @@ public class TelaTemperatura extends JFrame {
 		getContentPane().add(comboTemp2);
 		
 		fieldResultadoTemp = new JTextField();
-		fieldResultadoTemp.setBounds(142, 280, 86, 20);
+		fieldResultadoTemp.setBounds(117, 280, 146, 20);
 		getContentPane().add(fieldResultadoTemp);
 		fieldResultadoTemp.setColumns(10);
 		fieldResultadoTemp.setVisible(false);
 		
 		JLabel lblTextoTemp4 = new JLabel("Resultado");
 		lblTextoTemp4.setFont(new Font("Arial", Font.PLAIN, 16));
-		lblTextoTemp4.setBounds(149, 255, 79, 14);
+		lblTextoTemp4.setBounds(151, 255, 79, 14);
 		getContentPane().add(lblTextoTemp4);
 		lblTextoTemp4.setVisible(false);
 		
@@ -97,7 +97,7 @@ public class TelaTemperatura extends JFrame {
 				
 			}
 		});
-		btnBotaoVoltarTemp.setBounds(10, 279, 89, 23);
+		btnBotaoVoltarTemp.setBounds(10, 279, 70, 23);
 		getContentPane().add(btnBotaoVoltarTemp);
 		
 		

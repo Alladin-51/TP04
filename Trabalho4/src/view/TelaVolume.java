@@ -53,14 +53,14 @@ public class TelaVolume extends JFrame {
 		getContentPane().add(comboVol2);
 		
 		fieldResultadoVol = new JTextField();
-		fieldResultadoVol.setBounds(142, 280, 86, 20);
+		fieldResultadoVol.setBounds(117, 280, 146, 20);
 		getContentPane().add(fieldResultadoVol);
 		fieldResultadoVol.setColumns(10);
 		fieldResultadoVol.setVisible(false);
 		
 		JLabel lblTextoVol4 = new JLabel("Resultado");
 		lblTextoVol4.setFont(new Font("Arial", Font.PLAIN, 16));
-		lblTextoVol4.setBounds(149, 255, 79, 14);
+		lblTextoVol4.setBounds(151, 255, 79, 14);
 		getContentPane().add(lblTextoVol4);
 		lblTextoVol4.setVisible(false);
 		
@@ -94,7 +94,7 @@ public class TelaVolume extends JFrame {
 				
 			}
 		});
-		btnBotaoVoltarVol.setBounds(10, 279, 89, 23);
+		btnBotaoVoltarVol.setBounds(10, 279, 70, 23);
 		getContentPane().add(btnBotaoVoltarVol);
 		
 		
