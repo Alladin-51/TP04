@@ -26,6 +26,7 @@ public class Area {
 		{
 		// Caso o usuário escolha milímetros quadrados
 		case 0:
+			this.milhaQuadrado = valor;
 			this.centimetroQuadrado = valor / 100;
 			this.decimetroQuadrado = valor / 10000;
 			this.metroQuadrado = valor / 1000000;
@@ -37,6 +38,7 @@ public class Area {
 			
 		// Caso o usuário escolha centímetros quadrados
 		case 1:
+			this.centimetroQuadrado = valor;
 			this.milimetroQuadrado = valor * 100;
 			this.decimetroQuadrado = valor / 100;
 			this.metroQuadrado = valor / 10000;
@@ -48,6 +50,7 @@ public class Area {
 			
 		// Caso o usuário escolha decímetros quadrados
 		case 2:
+			this.decimetroQuadrado = valor;
 			this.milimetroQuadrado = valor * 10000;
 			this.centimetroQuadrado = valor * 100;
 			this.metroQuadrado = valor / 100;
@@ -59,6 +62,7 @@ public class Area {
 			
 		// Caso o usuário escolha metros quadrados
 		case 3:
+			this.metroQuadrado = valor;
 			this.milimetroQuadrado = valor * 1000000;
 			this.centimetroQuadrado = valor * 10000;
 			this.decimetroQuadrado = valor * 100;
@@ -70,6 +74,7 @@ public class Area {
 			
 		// Caso o usuário escolha quilômetros quadrados
 		case 4:
+			this.kilometroQuadrado = valor;
 			this.milimetroQuadrado = valor * dezElevado12;
 			this.centimetroQuadrado = valor * dezElevado10;
 			this.decimetroQuadrado = valor * 100000000;
@@ -81,6 +86,7 @@ public class Area {
 			
 		// Caso o usuário escolha milhas quadradas
 		case 5:
+			this.milhaQuadrado = valor;
 			this.milimetroQuadrado = valor * dois59Elevado12;
 			this.centimetroQuadrado = valor * dois59Elevado10;
 			this.decimetroQuadrado = valor * 259000000;
@@ -92,6 +98,7 @@ public class Area {
 			
 		// Caso o usuário escolha pés quadrados
 		case 6:
+			this.pesQuadrado = valor;
 			this.milimetroQuadrado = valor * 92903;
 			this.centimetroQuadrado = valor * 929.03;
 			this.decimetroQuadrado = valor * 9.2902;
