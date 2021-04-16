@@ -20,42 +20,55 @@ public class TelaTemperatura extends JFrame {
 	private JTextField fieldTemp;
 
 	private JPanel contentPane;
+	private JTextField fieldResultadoTemp;
 
 	public TelaTemperatura() {
 		
 		Temperatura temperatura = new Temperatura();
 		
-		setBounds(100, 100, 450, 300);
+		setBounds(200, 100, 400, 350);
 		getContentPane().setLayout(null);
 		
 		JLabel lblTextoTemp1 = new JLabel("Digite o valor a ser convertido");
-		lblTextoTemp1.setBounds(120, 11, 222, 14);
+		lblTextoTemp1.setBounds(108, 11, 220, 14);
 		getContentPane().add(lblTextoTemp1);
 		
 		fieldTemp = new JTextField();
-		fieldTemp.setBounds(152, 36, 86, 20);
+		fieldTemp.setBounds(138, 36, 86, 20);
 		getContentPane().add(fieldTemp);
 		fieldTemp.setColumns(10);
 		
 		JLabel lblTextoTemp2 = new JLabel("Selecione a unidade de medida do numero digitado acima");
-		lblTextoTemp2.setBounds(70, 67, 354, 14);
+		lblTextoTemp2.setBounds(29, 67, 331, 14);
 		getContentPane().add(lblTextoTemp2);
 		
 		JComboBox comboTemp = new JComboBox();
 		comboTemp.setModel(new DefaultComboBoxModel(new String[] {"Celsius", "Fahrenheit", "Kelvin", "Rankine", "Reamur"}));
-		comboTemp.setBounds(138, 92, 115, 22);
+		comboTemp.setBounds(122, 92, 130, 22);
 		getContentPane().add(comboTemp);
 		
 		JLabel lblTextoTemp3 = new JLabel("Selecione a unidade para qual deseja converter");
-		lblTextoTemp3.setBounds(97, 124, 327, 14);
+		lblTextoTemp3.setBounds(51, 123, 295, 14);
 		getContentPane().add(lblTextoTemp3);
 		
 		JComboBox comboTemp2 = new JComboBox();
 		comboTemp2.setModel(new DefaultComboBoxModel(new String[] {"Celsius", "Fahrenheit", "Kelvin", "Rankine", "Reamur"}));
-		comboTemp2.setBounds(138, 149, 115, 22);
+		comboTemp2.setBounds(122, 150, 130, 22);
 		getContentPane().add(comboTemp2);
 		
-		JButton btnBotaoTemperatura = new JButton("OK");
+		fieldResultadoTemp = new JTextField();
+		fieldResultadoTemp.setBounds(142, 280, 86, 20);
+		getContentPane().add(fieldResultadoTemp);
+		fieldResultadoTemp.setColumns(10);
+		fieldResultadoTemp.setVisible(false);
+		
+		JLabel lblTextoTemp4 = new JLabel("Resultado");
+		lblTextoTemp4.setFont(new Font("Arial", Font.PLAIN, 16));
+		lblTextoTemp4.setBounds(149, 255, 79, 14);
+		getContentPane().add(lblTextoTemp4);
+		lblTextoTemp4.setVisible(false);
+		
+		JButton btnBotaoTemperatura = new JButton("Converter");
 		btnBotaoTemperatura.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -65,21 +78,31 @@ public class TelaTemperatura extends JFrame {
 				temperatura.converteTemperatura(valor, comboTemp.getSelectedIndex());
 			
 				// Exibição do resultado
-				JFrame frame = new JFrame("Reultado");
-				frame.setSize(150, 150);
-				JLabel labelT = new JLabel(temperatura.getTemperatura(comboTemp2.getSelectedIndex()));
-				labelT.setFont( new Font("Arial", Font.PLAIN, 20));
-				labelT.setBounds(100, 70, 150, 150);
-				frame.getContentPane().add(labelT);
-				frame.setVisible(true);
-				setLocationRelativeTo(null);
-				setVisible(true);
 				
+				lblTextoTemp4.setVisible(true);
+				fieldResultadoTemp.setVisible(true);
+				fieldResultadoTemp.setText(temperatura.getTemperatura(comboTemp2.getSelectedIndex()));
 				
 			}
 		});
-		btnBotaoTemperatura.setBounds(149, 195, 89, 23);
+		btnBotaoTemperatura.setBounds(132, 193, 113, 23);
 		getContentPane().add(btnBotaoTemperatura);
+		
+		JButton btnBotaoVoltarTemp = new JButton("Voltar");
+		btnBotaoVoltarTemp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				setVisible(false);
+				new TelaPrincipal().setVisible(true);
+				
+			}
+		});
+		btnBotaoVoltarTemp.setBounds(10, 279, 89, 23);
+		getContentPane().add(btnBotaoVoltarTemp);
+		
+		
+		
+		
 		
 		setLocationRelativeTo(null);
 		setVisible(true);
