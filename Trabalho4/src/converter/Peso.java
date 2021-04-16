@@ -17,6 +17,7 @@ public void convertePeso(double valor, int unidadeMedida) {
 		{
 	// Caso o usuário escolha miligrama
 		case 0:
+			this.miliGrama = valor;
 			this.grama = valor / 1000;
 			this.kiloGrama = valor / 1000000;            // Em cada caso é calculado todos os 
 			this.libra = valor / 453592;                 //         valores possíveis
@@ -26,6 +27,7 @@ public void convertePeso(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha grama
 		case 1:
+			this.grama = valor;
 			this.miliGrama = valor * 1000;
 			this.kiloGrama = valor / 1000;
 			this.libra = valor / 453.592;
@@ -35,6 +37,7 @@ public void convertePeso(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha quilograma
 		case 2:
+			this.kiloGrama = valor;
 			this.miliGrama = valor * 1000000;
 			this.grama = valor * 1000;
 			this.libra = valor * 0.453592;
@@ -44,6 +47,7 @@ public void convertePeso(double valor, int unidadeMedida) {
 	// Caso o usuário escolha libra
 	
 		case 3:
+			this.libra = valor;
 			this.miliGrama = valor * 453592;
 			this.grama = valor * 453.592;
 			this.kiloGrama = valor * 0.453592;
@@ -53,6 +57,7 @@ public void convertePeso(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha tonelada
 		case 4:
+			this.tonelada = valor;
 			this.miliGrama = valor * 1000000000;
 			this.grama = valor * 1000000;
 			this.kiloGrama = valor * 1000;
