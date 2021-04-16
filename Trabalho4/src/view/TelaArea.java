@@ -35,7 +35,7 @@ public class TelaArea extends JFrame {
 		setTitle("Area");
 		
 		
-		// Codificação do primeiro JLabel e suas coordenadas e seu texto.
+		// Codificação do primeiro JLabel , suas coordenadas e seu texto.
 		JLabel lblTextoArea1 = new JLabel("Digite o valor a ser convertido");
 		lblTextoArea1.setBounds(108, 11, 220, 14);
 		getContentPane().add(lblTextoArea1);
@@ -120,7 +120,7 @@ public class TelaArea extends JFrame {
 			}
 		});
 		
-		// Coordenadas do btnBotãoArea
+		// Coordenadas do btnBotaoArea
 		btnBotaoArea.setBounds(132, 193, 113, 23);
 		getContentPane().add(btnBotaoArea);
 		
