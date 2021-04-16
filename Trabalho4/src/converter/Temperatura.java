@@ -16,6 +16,7 @@ public void converteTemperatura(double valor, int unidadeMedida) {
 		
 	// Caso o usuário escolha celcius
 		case 0:
+			this.celsius = valor;
 			this.fahrenheit = (valor * (9/5)) + 32;
 			this.kelvin = valor + 273.15;                   // Em cada caso é calculado todos os 
 			this.rankine = (valor * (9/5)) + 497.07;        //         valores possíveis
@@ -25,6 +26,7 @@ public void converteTemperatura(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha fahrenheit
 		case 1:
+			this.fahrenheit = valor;
 			this.celsius = (valor - 32) * (5/9);
 			this.kelvin = (valor - 32) * (5/9) + 273.15;
 			this.rankine = valor + 459.67;
@@ -34,6 +36,7 @@ public void converteTemperatura(double valor, int unidadeMedida) {
 			
 	// Caso o usuários escolha kelvin
 		case 2:
+			this.kelvin = valor;
 			this.celsius = valor - 273.15;
 			this.fahrenheit = (valor - 273.15) * (9/5) + 32;
 			this.rankine = valor * 1.8;
@@ -43,6 +46,7 @@ public void converteTemperatura(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha rankine
 		case 3:
+			this.rankine = valor;
 			this.celsius = (valor - 491.67) * (5/9);
 			this.fahrenheit = valor - 459.67;
 			this.kelvin = valor *(5/9);
@@ -52,6 +56,7 @@ public void converteTemperatura(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha reamur
 		case 4:
+			this.reaumur = valor;
 			this.celsius = valor * (5/4);
 			this.fahrenheit = (valor * (9/4)) + 32;
 			this.kelvin = (valor * 5/4) + 273.15;
