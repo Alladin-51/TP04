@@ -23,6 +23,7 @@ public class Tempo {
 		{
 		// Caso o usuário escolha milisegundos
 		case 0:
+			this.miliSegundo = valor;
 			this.segundo = valor / 1000;
 			this.minuto = valor / 60000;
 			this.hora = valor / 3600000;                   // Em cada caso já é calculado todas
@@ -35,6 +36,7 @@ public class Tempo {
 			
 		// Caso o usuário escolha segundos
 		case 1:
+			this.segundo = valor;
 			this.miliSegundo = valor * 1000;
 			this.minuto = valor / 60;
 			this.hora = valor / 3600;
@@ -47,6 +49,7 @@ public class Tempo {
 			
 		// Caso o usuário escolha minutos
 		case 2:
+			this.minuto = valor;
 			this.miliSegundo = valor * 60000;
 			this.segundo = valor * 60;
 			this.hora = valor / 60;
@@ -59,6 +62,7 @@ public class Tempo {
 						
 		// Caso o usuário escolha horas
 		case 3:
+			this.hora = valor;
 			this.miliSegundo = valor * 3600000;
 			this.segundo = valor * 3600;
 			this.minuto = valor * 60;
@@ -71,6 +75,7 @@ public class Tempo {
 			
 		// Caso o usuário escolha dia
 		case 4:
+			this.dia = valor;
 			this.miliSegundo = valor * 86400000;
 			this.segundo = valor * 86400;
 			this.minuto = valor * 1440;
@@ -83,6 +88,7 @@ public class Tempo {
 			
 		// Caso o usuário escolha semanas
 		case 5:
+			this.semana = valor;
 			this.miliSegundo = valor * 604800000;
 			this.segundo = valor * 604800;
 			this.minuto = valor * 10080;
@@ -95,6 +101,7 @@ public class Tempo {
 			
 		// Caso o usuário escolha mes
 		case 6:
+			this.mes = valor;
 			this.miliSegundo = valor * duzentos62Elevado9;
 			this.segundo = valor * 2628000;
 			this.minuto = valor * 43800;
@@ -107,6 +114,7 @@ public class Tempo {
 			
 		// Caso o usuário escolha ano
 		case 7:
+			this.ano = valor;
 			this.miliSegundo = valor * tresentos15Elevado10;
 			this.segundo = valor * 31540000;
 			this.minuto = valor * 525600;
