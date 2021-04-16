@@ -116,10 +116,10 @@ public class TelaComprimento extends JFrame {
 			
 				// Exibição do resultado
 				
-				 lblTextoComp4.setVisible(true); // Torna o lblTextoArea4 visível para o usuário.
-				 fieldResultadoComp.setVisible(true); // Torna o fieldResultadoArea visível para o usuário.
+				 lblTextoComp4.setVisible(true); // Torna o lblTextoComp4 visível para o usuário.
+				 fieldResultadoComp.setVisible(true); // Torna o fieldResultadoComp visível para o usuário.
 			     fieldResultadoComp.setText(comprimento.getComp(comboComp2.getSelectedIndex()));/* Exibição do resultado no 
-			     																					  fieldResultadoArea */
+			     																					  fieldResultadoComp */
 			}
 		});
 		// Coordenadas do btnBotaoComp.
@@ -136,7 +136,7 @@ public class TelaComprimento extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				new	TelaPrincipal().setVisible(true); // Este método deixa a TelaPrincipal visível para o usuário.
-				setVisible(false);  // Esse método deixa a TelaArea invisível para o usuário.
+				setVisible(false);  // Esse método deixa a TelaComprimento invisível para o usuário.
 				
 			}
 		});

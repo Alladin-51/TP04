@@ -22,6 +22,7 @@ public class TelaDados extends JFrame {
 
 	public TelaDados() {
 		
+		
 		// Instanciação da classe Dados do pacote converter.
 		Dados dados = new Dados();
 		
@@ -35,6 +36,7 @@ public class TelaDados extends JFrame {
 		JLabel lblTextoDado1 = new JLabel("DIgite o valor a ser convertido");
 		lblTextoDado1.setBounds(109, 11, 220, 14);
 		getContentPane().add(lblTextoDado1);
+		setTitle("Dados");
 		
 		
 		// Codificação do primeiro JTextField com suas coordenadas.
@@ -107,8 +109,8 @@ public class TelaDados extends JFrame {
 				dados.converteDado(valor, comboDado1.getSelectedIndex());
 			
 				// Exibição do resultado
-				lblTextoDado4.setVisible(true); // Torna o lblTextoArea4 visível para o usuário.
-				fieldResultadoDado.setVisible(true); // Torna o fieldResultadoArea visível para o usuário.
+				lblTextoDado4.setVisible(true); // Torna o lblTextoDado4 visível para o usuário.
+				fieldResultadoDado.setVisible(true); // Torna o fieldResultadoDado visível para o usuário.
 				fieldResultadoDado.setText(dados.getDados(comboDado2.getSelectedIndex()));//Exibição do resultado no fieldResultadoDado
 				
 			}
@@ -127,7 +129,7 @@ public class TelaDados extends JFrame {
 		btnBotaoVoltarDado.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				setVisible(false); // Esse método deixa a TelaArea invisível para o usuário.
+				setVisible(false); // Esse método deixa a TelaDados invisível para o usuário.
 				new TelaPrincipal().setVisible(true); // Este método deixa a TelaPrincipal visível para o usuário.
 			}
 		});
