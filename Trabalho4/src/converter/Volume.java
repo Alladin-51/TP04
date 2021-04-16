@@ -18,6 +18,7 @@ public class Volume {
 		{
 	// Caso o usuário escolha mililitros
 		case 0:
+			this.miliLitros = valor;
 			this.litros = valor / 1000;
 			this.milimetrosCubicos = valor * 1000;
 			this.centimetrosCubicos = valor ;               // Em cada caso é calculado todos os 
@@ -29,6 +30,7 @@ public class Volume {
 			
 	// Caso o usuário escolha litros
 		case 1:
+			this.litros = valor;
 			this.miliLitros = valor * 1000;
 			this.milimetrosCubicos = valor * 1000000;
 			this.centimetrosCubicos = valor * 1000;
@@ -40,6 +42,7 @@ public class Volume {
 			
 	// Caso o usuário escolha milímetros cúbicos
 		case 2:
+			this.milimetrosCubicos = valor;
 			this.miliLitros = valor / 1000;
 			this.litros = valor / 1000000;
 			this.centimetrosCubicos = valor / 1000;
@@ -51,6 +54,7 @@ public class Volume {
 			
 	// Caso o usuário escolha centímetros cúbicos
 		case 3:
+			this.centimetrosCubicos = valor;
 			this.miliLitros = valor;
 			this.litros = valor / 1000;
 			this.milimetrosCubicos = valor * 1000;
@@ -62,6 +66,7 @@ public class Volume {
 			
 	// Caso o usuário escolha decímetros cúbicos
 		case 4:
+			this.decimetrosCubicos = valor;
 			this.miliLitros = valor * 1000;
 			this.litros = valor;
 			this.milimetrosCubicos = valor * 1000000;
@@ -73,6 +78,7 @@ public class Volume {
 			
 	// Caso o usuário escolha metros cúbicos
 		case 5:
+			this.metrosCubicos = valor;
 			this.miliLitros = valor * 1000000;
 			this.litros = valor * 1000;
 			this.milimetrosCubicos = valor * 1000000000;
@@ -84,6 +90,7 @@ public class Volume {
 			
 	// Caso o usuário escolha pés cúbicos
 		case 6:
+			this.pesCubicos = valor;
 			this.miliLitros = valor * 28317;
 			this.litros = valor * 28.317;
 			this.milimetrosCubicos = valor * 28320000;
