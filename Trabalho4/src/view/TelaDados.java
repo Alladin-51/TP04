@@ -103,7 +103,7 @@ public class TelaDados extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				double valor = Double.parseDouble(fieldDado.getText().toString()); /* Essa variavel serve para armazenar o valor do
-                																		 fieldArea (string) em forma de Double  */
+                																		 fieldDado (string) em forma de Double  */
 				
 				// Aqui é feita a converção
 				dados.converteDado(valor, comboDado1.getSelectedIndex());

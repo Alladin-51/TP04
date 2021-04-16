@@ -105,7 +105,7 @@ public class TelaTemperatura extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				double valor = Double.parseDouble(fieldTemp.getText().toString()); /* Essa variavel serve para armazenar o valor do
-                																		 fieldArea (string) em forma de Double  */
+                																		 fieldTemp (string) em forma de Double  */
 				
 				// Aqui é feita a converção
 				temperatura.converteTemperatura(valor, comboTemp.getSelectedIndex());

@@ -104,7 +104,7 @@ public class TelaPeso extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				double valor = Double.parseDouble(fieldPeso.getText().toString()); /* Essa variavel serve para armazenar o valor do
-                																		 fieldArea (string) em forma de Double  */
+                																		 fieldPeso (string) em forma de Double  */
 				
 				// Aqui é feita a converção
 				peso.convertePeso(valor, comboPeso1.getSelectedIndex());

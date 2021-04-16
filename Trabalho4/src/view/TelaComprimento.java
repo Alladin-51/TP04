@@ -109,7 +109,7 @@ public class TelaComprimento extends JFrame {
 			
 				
 				double valor = Double.parseDouble(fieldComp.getText().toString()); /* Essa variavel serve para armazenar o valor do
-                																		fieldArea (string) em forma de Double  */
+                																		fieldComp (string) em forma de Double  */
 				
 				// Aqui é feita a converção
 				comprimento.converteComp(valor, comboComp1.getSelectedIndex());
