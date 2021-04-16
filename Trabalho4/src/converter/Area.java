@@ -154,6 +154,12 @@ public class Area {
 	public void setPesQuadrado(double pesQuadrado) {
 		this.pesQuadrado = pesQuadrado;
 	}
+	
+	
+	
+	// Este método serve para mandar as informações para o pacote view
+	// Ele transforma o resultado da conta em uma string e usa o switch para alternar entre as opçoes escolhidas
+	
 	public String getArea(int n)
 	{
 		String str = null;

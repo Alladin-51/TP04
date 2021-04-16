@@ -159,6 +159,10 @@ public class Dados {
 	public void setGigaBit(double gigaBit) {
 		this.gigaBit = gigaBit;
 	}
+	
+	
+	// Este método serve para mandar as informações para o pacote view
+	// Ele transforma o resultado da conta em uma string e usa o switch para alternar entre as opçoes escolhidas
 	public String getDados(int n)
 	{
 		String str = null;

@@ -148,6 +148,11 @@ public class Volume {
 	public void setPesCubicos(double pesCubicos) {
 		this.pesCubicos = pesCubicos;
 	}
+	
+	
+	// Este método serve para mandar as informações para o pacote view
+	// Ele transforma o resultado da conta em uma string e usa o switch para alternar entre as opçoes escolhidas
+	
 	public String getVol(int n)
 	{
 		String str = null;

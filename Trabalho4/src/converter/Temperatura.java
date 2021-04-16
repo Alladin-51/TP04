@@ -100,6 +100,11 @@ public void converteTemperatura(double valor, int unidadeMedida) {
 	public void setReaumur(double reaumur) {
 		this.reaumur = reaumur;
 	}
+	
+	
+	// Este método serve para mandar as informações para o pacote view
+	// Ele transforma o resultado da conta em uma string e usa o switch para alternar entre as opçoes escolhidas
+	
 	public String getTemperatura(int n)
 	{
 		String str = null;
