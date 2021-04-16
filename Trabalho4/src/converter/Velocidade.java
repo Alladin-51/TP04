@@ -19,6 +19,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 		{
 	// Caso o usuário escolha pés por segundo
 		case 0:
+			this.pesSegundo = valor;
 			this.metroSegundo = valor / 3.281;
 			this.kilometroSegundo = valor / 3280.840;    // Em cada caso é calculados todos os
 			this.metroMinuto = valor / 18.288;           //         valores possíveis
@@ -30,6 +31,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha metros por segundo
 		case 1:
+			this.metroSegundo = valor;
 			this.pesSegundo = valor * 3.281;
 			this.kilometroSegundo = valor / 1000;
 			this.metroMinuto = valor * 60;
@@ -40,6 +42,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha quilômetros por segundo
 		case 2:
+			this.kilometroSegundo = valor;
 			this.pesSegundo = valor * 3281;
 			this.metroSegundo = valor * 1000;
 			this.metroMinuto = valor * 60000;
@@ -51,6 +54,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha metros por minuto
 		case 3:
+			this.metroMinuto = valor;
 			this.pesSegundo = valor / 18.228;
 			this.metroSegundo = valor / 60;
 			this.kilometroSegundo = valor / 60000;
@@ -61,6 +65,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha quilômetros por minuto
 		case 4:
+			this.kilometroMinuto = valor;
 			this.pesSegundo = valor * 54.681;
 			this.metroSegundo = valor * 16.667;
 			this.kilometroSegundo = valor / 60;
@@ -72,6 +77,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha quilômetros por hora
 		case 5:
+			this.kilometroHora = valor;
 			this.pesSegundo = valor / 1.097;
 			this.metroSegundo = valor / 3.6;
 			this.kilometroSegundo = valor / 3600;
@@ -83,6 +89,7 @@ public void converteVelo(double valor, int unidadeMedida) {
 			
 	// Caso o usuário escolha milhas por hora
 		case 6:
+			this.milhaHora = valor;
 			this.pesSegundo = valor * 1.467;
 			this.metroSegundo = valor / 2.237;
 			this.kilometroSegundo = valor / 2237;
