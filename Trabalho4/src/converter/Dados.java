@@ -18,6 +18,7 @@ public class Dados {
 		{
 	// Caso o usuário escolha bit
 		case 0:
+			this.bit = valor;
 			this.bytes = valor / 8;
 			this.kiloByte = valor / 8000;                // Em cada caso é calculado todos os 
 			this.kibByte = valor / 8192;                 //         valores possíveis
@@ -29,6 +30,7 @@ public class Dados {
 			
 	// Caso o usuário escolha byte
 		case 1:
+			this.bytes = valor;
 			this.bit = valor * 8;
 			this.kiloByte = valor / 1000;
 			this.kibByte = valor / 1024;
@@ -40,6 +42,7 @@ public class Dados {
 			
 	// Caso o usuário escolha kilobytes
 		case 2:
+			this.kiloByte = valor;
 			this.bit = valor * 8000;
 			this.bytes = valor * 1000;
 			this.kibByte = valor / 1.024;
@@ -51,6 +54,7 @@ public class Dados {
 			
 	// Caso o usuário escoolha kibibytes
 		case 3:
+			this.kibByte = valor;
 			this.bit = valor * 8192;
 			this.bytes = valor * 1024;
 			this.kiloByte = valor * 1.024;
@@ -62,6 +66,7 @@ public class Dados {
 			
 	// Caso o usuário escolha kibibit
 		case 4:
+			this.kibBit = valor;
 			this.bit = valor * 1024;
 			this.bytes = valor * 128;
 			this.kiloByte = valor / 7.812;
@@ -73,6 +78,7 @@ public class Dados {
 			
 	// Caso o usuário escolha megabit
 		case 5:
+			this.megaBit = valor;
 			this.bit = valor * 1000000;
 			this.bytes = valor * 125000;
 			this.kiloByte = valor * 125;
@@ -84,6 +90,7 @@ public class Dados {
 			
 	// Caso o usuário escolha gigabit
 		case 6:
+			this.gigaBit = valor;
 			this.bit = valor * 1000000000;
 			this.bytes = valor * 125000000;
 			this.kiloByte = valor * 125000;
