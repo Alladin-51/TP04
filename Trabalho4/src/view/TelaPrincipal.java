@@ -22,9 +22,9 @@ public class TelaPrincipal extends JFrame {
 		
 		
 		// Codificação e coordenadas do Jframe.
-		setTitle("Tela inicial");
+		setTitle("Conversor de medidas");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 300, 200);
+		setBounds(100, 100, 320, 200);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -32,8 +32,8 @@ public class TelaPrincipal extends JFrame {
 		
 		// Codificação do JLabel da tela principal com suas coordenadas e seu texto.
 		JLabel lblTextoPrincipal = new JLabel("Escolha qual campo de medida deseja converter");
-		lblTextoPrincipal.setFont(new Font("Arial", Font.PLAIN, 11));
-		lblTextoPrincipal.setBounds(24, 11, 238, 28);
+		lblTextoPrincipal.setFont(new Font("Arial", Font.PLAIN, 13));
+		lblTextoPrincipal.setBounds(10, 11, 284, 28);
 		contentPane.add(lblTextoPrincipal);
 		
 		// Codificação da JComboBox da tela principal com suas coordenadas e seus componentes.
